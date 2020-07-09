@@ -13,11 +13,11 @@ const Dashboard = props =>{
             state:data });
     }
     if(!auth.data) return <Redirect to='/' />
-    
+
     return(
         <div>
             {Data.map((list,i) =>
-            <StyleDiv className='Clicakable' key={i} onClick={() => handleClick(list)}>
+            <StyleDiv key={i} onClick={() => handleClick(list)}>
                 <div className='user'>{list.user}</div>
                 <div className='email'>{list.email}</div>
                 </StyleDiv>
